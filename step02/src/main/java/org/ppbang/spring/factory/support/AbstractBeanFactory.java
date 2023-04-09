@@ -5,7 +5,7 @@ import org.ppbang.spring.factory.BeanFactory;
 import org.ppbang.spring.factory.config.BeanDefinition;
 
 /**
- * 定义模版类
+ * 定义父模版类，骨架
  */
 public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegister implements BeanFactory {
     public Object getBean(String beanName) {
@@ -22,11 +22,19 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegister i
 //      // 3、将创建后的bean加入单例池中
 //      addSingleton(beanName, bean);
 
+        // 3、交给子类实现createBean方法详细内容
         return createBean(beanName, beanDefinition);
     }
 
 
     protected abstract BeanDefinition getBeanDefinition(String beanName) throws BeanException;
 
+    /**
+     *  具体方法实现交给子类区实现
+     * @param beanName
+     * @param beanDefinition
+     * @return
+     * @throws BeanException
+     */
     protected abstract Object createBean(String beanName, BeanDefinition beanDefinition) throws BeanException;
 }
