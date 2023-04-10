@@ -1,0 +1,33 @@
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"CompilerConfiguration\">\n    <annotationProcessing>\n      <profile name=\"Maven default annotation processors profile\" enabled=\"true\">\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\n        <outputRelativeToContentRoot value=\"true\" />\n        <module name=\"step03\" />\n        <module name=\"step02\" />\n        <module name=\"step01\" />\n      </profile>\n    </annotationProcessing>\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	
++++ b/.idea/compiler.xml	
+@@ -7,8 +7,6 @@
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
+         <module name="step03" />
+-        <module name="step02" />
+-        <module name="step01" />
+       </profile>
+     </annotationProcessing>
+   </component>
+Index: step03.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module version=\"4\">\n  <component name=\"NewModuleRootManager\">\n    <content url=\"file://$MODULE_DIR$/step03\">\n      <sourceFolder url=\"file://$MODULE_DIR$/step03/src/main/java\" isTestSource=\"false\" />\n    </content>\n  </component>\n</module>
+===================================================================
+diff --git a/step03.iml b/step03.iml
+--- a/step03.iml	
++++ b/step03.iml	
+@@ -4,5 +4,6 @@
+     <content url="file://$MODULE_DIR$/step03">
+       <sourceFolder url="file://$MODULE_DIR$/step03/src/main/java" isTestSource="false" />
+     </content>
++    <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+ </module>
+\ No newline at end of file
