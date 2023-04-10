@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/step01/step01.iml" filepath="$PROJECT_DIR$/step01/step01.iml" />
-      <module fileurl="file://$PROJECT_DIR$/step02/step02.iml" filepath="$PROJECT_DIR$/step02/step02.iml" />
       <module fileurl="file://$PROJECT_DIR$/step03.iml" filepath="$PROJECT_DIR$/step03.iml" />
     </modules>
   </component>
