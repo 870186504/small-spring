@@ -9,6 +9,7 @@
         <module name="step03" />
         <module name="step02" />
         <module name="step01" />
+        <module name="step04" />
       </profile>
     </annotationProcessing>
   </component>
